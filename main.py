@@ -15,7 +15,7 @@ class Item:
         self.quantity = quantity
 
         # Actions to execute
-        Item.all.append(self)
+        print(Item.all.append(self))
 
     def calculate_total_price(self):
         return self.price * self.quantity
@@ -49,4 +49,8 @@ class Item:
             return False
 
     def __repr__(self):
-        return f"Item('{self.name}', {self.price}, {self.quantity})"
+        return f"Item('{self.name}', {self.price}, {self.quantity})" 
+    
+
+print(Item.is_integer())
+######
